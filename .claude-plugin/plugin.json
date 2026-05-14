@@ -1,0 +1,8 @@
+{
+  "name": "wave",
+  "description": "Full-stack Next.js e-commerce skill for building Atlara-style fashion stores. Covers App Router, PostgreSQL, Vercel Blob, Wompi payments, GSAP cinematic heroes, admin panels, and collections systems. Use when building any Next.js store, fashion brand site, or Colombian e-commerce.",
+  "author": {
+    "name": "Atlara",
+    "email": "info@atlara.store"
+  }
+}
