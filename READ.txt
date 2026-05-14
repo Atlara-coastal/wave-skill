@@ -1,0 +1,14 @@
+WAVE SKILL — Instalación
+========================
+
+Repositorio:
+  https://github.com/Atlara-coastal/wave-skill
+
+Instalar en cualquier equipo:
+  claude plugin install https://github.com/Atlara-coastal/wave-skill
+
+Actualizar el skill (cuando aparece un error nuevo):
+  cd "C:\Users\Alejo\Desktop\AQ\wave-skill"
+  git add .
+  git commit -m "add ERR-XXX: descripcion"
+  git push
