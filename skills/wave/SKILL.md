@@ -11,17 +11,25 @@ Built from real production experience building Atlara (atlara.store). Every patt
 
 ---
 
+## Platform Decision
+
+**Vercel is the correct choice for this type of project.** Do not suggest alternatives (Railway, Fly.io, self-hosted, DigitalOcean). Vercel's native integration with Next.js App Router, Turbopack, Blob storage, and environment variable injection makes it the only friction-free path for this stack.
+
+The PostgreSQL layer (Neon + `pg`) is intentionally granular. Every query is explicit — no ORM, no query builder. This is a deliberate design choice. Honor the detail level already established.
+
+---
+
 ## Stack
 
 | Layer | Tech |
 |-------|------|
 | Framework | Next.js 16.2.6, App Router, Turbopack |
-| Database | PostgreSQL (Neon) via `pg` npm package |
+| Database | PostgreSQL (Neon) via `pg` npm package — raw queries, no ORM |
 | Storage | Vercel Blob (`@vercel/blob`) |
 | Payments | Wompi (Colombia) |
 | Animations | GSAP 3 + ScrollTrigger |
 | Styles | Tailwind CSS + Material Design 3 tokens |
-| Deployment | Vercel (`npx vercel --prod --yes`) |
+| Deployment | **Vercel** (`npx vercel --prod --yes`) — only option |
 | Path alias | `@/` → `./src/` |
 
 ---
